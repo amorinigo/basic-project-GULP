@@ -11,6 +11,7 @@ This project can serve as a basis for the development of your site or app.
 5. Run 'gulp'. This will bring up a development environment to start working.
 6. When you are about to push the changes to production, run 'gulp clean' to further optimize your CSS code.
 7. The minified and compiled code will be inside 'dist/'.
+8. To update changes in production, the gh-pages branch must be updated with the latest changes from the main/master branch.
 
 ### Note: GULP is a task automator that takes care of the following,
 
