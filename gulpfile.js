@@ -96,7 +96,7 @@ task( 'images', () => {
 
 	return src( './src/assets/images/**/*.{jpg,jpeg,png,svg,gif,ico,webp}' )
 		.pipe( plumber() )
-		.pipe( dest( './dist/assets/' ) );
+		.pipe( dest( './dist/assets/images/' ) );
 
 } );
 
