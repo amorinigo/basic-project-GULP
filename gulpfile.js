@@ -108,6 +108,14 @@ task( 'fonts', () => {
 
 } );
 
+task( 'docs', () => {
+
+	return src( './src/assets/docs/*' )
+		.pipe( plumber() )
+		.pipe( dest( './dist/assets/docs/' ) );
+
+} );
+
 const reload = done => {
 	browserSync.reload();
 	done();
@@ -121,6 +129,7 @@ task( 'default', () => {
 	watch( './src/js/*.js',         series('js',     reload) );
 	watch( './src/assets/images/*', series('images', reload) );
 	watch( './src/assets/fonts/*',  series('fonts',  reload) );
+	watch( './src/assets/docs/*',   series('docs',  reload) );
 	src( './dist/js/index.min.js' );
 
 } );
